@@ -1,23 +1,3 @@
-# WE COVER
-
-*The Complete Node.js Course *
-
-# Table of Contents
-
-1. [Module 2: Node Module System]()
-
-```bash
-	 Introduction- Welcome to the Node Module System.
-```
-
-```bash
-	 Global Object-
-
-	 1- create a model folder
-	 2- touch user.js 
-	 3- paste this body content
-
-
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
@@ -55,14 +35,4 @@ function validateUser(user) {
 
 
 exports.User = User;
-exports.validate = validateUser;  
-
-	4- install Joi like this -> npm i joi
-	5- install mongoose like this -> npm i mongoose
-```
-
-```bash
-	 Modules- 
-
-	 see you tomorrow, we're gonna pick up the pace, so let's be ready!
-```
+exports.validate = validateUser;
