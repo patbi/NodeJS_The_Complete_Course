@@ -13,9 +13,9 @@
 ```bash
 	 Global Object-
 
-	 1- create a model folder
-	 2- touch user.js 
-	 3- paste this body content
+ 1- create a model folder
+ 2- touch user.js 
+ 3- paste this body content
 
 
 const Joi = require('joi');
@@ -57,12 +57,23 @@ function validateUser(user) {
 exports.User = User;
 exports.validate = validateUser;  
 
-	4- install Joi like this -> npm i joi
-	5- install mongoose like this -> npm i mongoose
+4- install Joi like this -> npm i joi
+5 - install joi-objectid like this-> npm i joi-objectid
+6- install mongoose like this -> npm i mongoose
 ```
 
 ```bash
 	 Modules- 
 
-	 see you tomorrow, we're gonna pick up the pace, so let's be ready!
+	 1 - create server file : touch index.js
+	 2 - create server with express //index.js
+	 3 - connect MongoDB database //index.js
+	 4 - create route file: touch routes/user.js
+	 5 - create & save new user to database // routes/user.js
+```
+
+
+```bash
+	 Creating a Module- 
+	 
 ```

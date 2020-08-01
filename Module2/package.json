@@ -4,13 +4,16 @@
   "description": "*The Complete Node.js Course *",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "joi": "^17.1.1",
-    "mongoose": "^5.9.27"
+    "joi-objectid": "^3.0.1",
+    "mongoose": "^5.9.27",
+    "nodemon": "^2.0.4"
   }
 }
