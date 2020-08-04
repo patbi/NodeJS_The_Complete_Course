@@ -76,5 +76,15 @@ exports.validate = validateUser;
 ```bash
 	 Creating a Module- 
 
-	 We continue tomorrow.
+
+	 1 - Look lodash documentation https://lodash.com/
+	 2 - install lodash like this -> npm install lodash 
+	 3 - add module like this -> const _ = require('lodash');  // routes/users
+	 4 - Look joi-password-complexity documentation -> https://www.npmjs.com/package/joi-password-complexity
+	 5 - install joi-password-complexity liek this -> npm i joi-password-complexity
+```
+
+```bash
+	 Loading a Module- 
+
 ```
