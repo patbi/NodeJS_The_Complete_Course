@@ -10,7 +10,7 @@ const express = require('express');
 const app = express();
 
 
-mongoose.connect('mongodb+srv://username:password@fdfdff-autrq.mongodb.net/database', { useUnifiedTopology: true,  useNewUrlParser: true })
+mongoose.connect('mongodb+srv://username:password@fhgjk.mongodb.net/database', { useUnifiedTopology: true,  useNewUrlParser: true })
 	.then(() => console.log('Connected to MongoDB...'))
 	.catch(err => console.error('Could not connect to MongoDB...'));
 

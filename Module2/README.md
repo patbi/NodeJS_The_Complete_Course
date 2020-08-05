@@ -86,5 +86,28 @@ exports.validate = validateUser;
 
 ```bash
 	 Loading a Module- 
+	 1 - npm i bcrypt
+	 2 - touch hash.js // Module2
 
+	 3 - write this body content :
+
+		const bcrypt = require('bcrypt');
+
+		async function run() {
+			const salt = await bcrypt.genSalt(10);
+			const hashed = await bcrypt.hash('1234', salt);
+			console.log(salt);
+			console.log(hashed);	
+		}
+
+		run();
+
+	4 - run node hash.js
+	5 - update index.js // see -> //update comment lines
+
+```
+
+
+```bash
+	 Module Wrapper Function-
 ```
