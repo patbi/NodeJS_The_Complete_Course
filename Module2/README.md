@@ -103,7 +103,7 @@ exports.validate = validateUser;
 		run();
 
 	4 - run node hash.js
-	5 - update index.js // see -> //update comment lines
+	5 - update users.js // see -> // routes/users update comment lines 
 
 ```
 
