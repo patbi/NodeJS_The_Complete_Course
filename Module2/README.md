@@ -110,4 +110,54 @@ exports.validate = validateUser;
 
 ```bash
 	 Module Wrapper Function-
+	 1 - touch routes/auth.js
+	 2 - write this body content
+
+		const Joi = require('joi');
+		const bcrypt = require('bcrypt'); //update
+		const _ = require('lodash');
+		const {User} = require('../models/user');
+		const mongoose = require('mongoose');
+		const express = require('express');
+		const router = express.Router();
+
+		router.post('/', async (req, res) => {
+			const error = validate(req.body);
+			if (error) return res.status(400).send(error.details[0].message);
+
+			let user = await User.findOne({ email: req.body.email });
+			if (!user) return res.status(400).send('Invalid email or password.');
+
+			const validPassword = await bcrypt.compare(req.body.password, user.password);
+			if (!validPassword) return res.status(400).send('Invalid email or password.');
+
+			res.send(true);
+		});
+
+		function validate(req) {
+			const schema = Joi.object({
+				email: Joi.string().min(5).max(255).required().email(),
+				password: Joi.string().min(5).max(255).required()
+			});
+
+			return Joi.assert(req, schema);
+		}
+
+		module.exports = router;
+```
+
+```bash
+	 Path Module -
+
+	 test auth API : URL endpoint -> http://localhost:3000/api/auth
+
+	 1 - email & password
+	 2 - Invalid email
+	 3 - Invalid password
+```
+
+```bash
+	 OS Module -
+
+	 
 ```
