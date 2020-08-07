@@ -158,6 +158,23 @@ exports.validate = validateUser;
 
 ```bash
 	 OS Module -
-
+	 1 - Look JSON Web Tokens work (documentation) -> https://jwt.io/
+	 2 - 
 	 
+```
+
+
+```bash
+	 File System Module -
+
+	 1 - npm i jsonwebtoken
+	 2 - Look update2 lines in routes/auth
+	 3 - test post request on postman You see token code
+	 4 - Paste token code -> https://jwt.io/ You see Decoded informations	 
+```
+
+
+```bash
+	  Events Module -
+	  	  
 ```
