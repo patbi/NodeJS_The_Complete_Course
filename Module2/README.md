@@ -176,5 +176,11 @@ exports.validate = validateUser;
 
 ```bash
 	  Events Module -
-	  	  
+	  1 - npm i config
+	  2 - create folder "config"
+	  3 - In this folder create 'default.json' file
+	  4 - create another file like this touch config/custom-environment-variables.json
+	  5 - nodemon index.js you see 	"Fatal error: jwtPrivateKey is not defined"
+	  6 - export vidly_jwtPrivateKey=mySecureKey || SET vidly_jwtPrivateKey=mySecureKey
+	  7 - run nodemon index.js
 ```
