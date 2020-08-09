@@ -184,3 +184,9 @@ exports.validate = validateUser;
 	  6 - export vidly_jwtPrivateKey=mySecureKey || SET vidly_jwtPrivateKey=mySecureKey
 	  7 - run nodemon index.js
 ```
+
+```bash
+	  Event Arguments -
+
+	  see you tomorrow.
+```
