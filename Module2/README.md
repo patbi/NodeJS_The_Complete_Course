@@ -188,5 +188,11 @@ exports.validate = validateUser;
 ```bash
 	  Event Arguments -
 
-	  see you tomorrow.
+	  Look update3 lines in -> routes/users
+```
+
+```bash
+	  Extending EventEmitter -
+
+	  
 ```
