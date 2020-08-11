@@ -194,5 +194,5 @@ exports.validate = validateUser;
 ```bash
 	  Extending EventEmitter -
 
-	  
+	  see you tomorrow.
 ```
