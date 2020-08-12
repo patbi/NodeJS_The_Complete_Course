@@ -194,5 +194,14 @@ exports.validate = validateUser;
 ```bash
 	  Extending EventEmitter -
 
+	  - see update in models/user.js
+	  - see update4 in models/auth.js
+	  - see update4 in routes/user.js
+```
+
+
+```bash
+	  Node Module System -
+
 	  see you tomorrow.
 ```
